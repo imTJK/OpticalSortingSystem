@@ -1,0 +1,35 @@
+[7.685s] Invoking command in '/home/ubuntu/ros_ws/src/optical_sorting_system': PYTHONPATH=/home/ubuntu/ros_ws/build/optical_sorting_system/prefix_override:/home/ubuntu/ros_ws/install/optical_sorting_system/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/optical_sorting_system build --build-base /home/ubuntu/ros_ws/build/optical_sorting_system/build install --record /home/ubuntu/ros_ws/build/optical_sorting_system/install.log --single-version-externally-managed
+[10.493s] running egg_info
+[10.498s] creating ../../build/optical_sorting_system/optical_sorting_system.egg-info
+[10.500s] writing ../../build/optical_sorting_system/optical_sorting_system.egg-info/PKG-INFO
+[10.503s] writing dependency_links to ../../build/optical_sorting_system/optical_sorting_system.egg-info/dependency_links.txt
+[10.505s] writing entry points to ../../build/optical_sorting_system/optical_sorting_system.egg-info/entry_points.txt
+[10.507s] writing requirements to ../../build/optical_sorting_system/optical_sorting_system.egg-info/requires.txt
+[10.509s] writing top-level names to ../../build/optical_sorting_system/optical_sorting_system.egg-info/top_level.txt
+[10.510s] writing manifest file '../../build/optical_sorting_system/optical_sorting_system.egg-info/SOURCES.txt'
+[10.526s] reading manifest file '../../build/optical_sorting_system/optical_sorting_system.egg-info/SOURCES.txt'
+[10.534s] writing manifest file '../../build/optical_sorting_system/optical_sorting_system.egg-info/SOURCES.txt'
+[10.536s] running build
+[10.537s] running build_py
+[10.539s] creating /home/ubuntu/ros_ws/build/optical_sorting_system/build
+[10.540s] creating /home/ubuntu/ros_ws/build/optical_sorting_system/build/lib
+[10.542s] creating /home/ubuntu/ros_ws/build/optical_sorting_system/build/lib/optical_sorting_system
+[10.543s] copying optical_sorting_system/__init__.py -> /home/ubuntu/ros_ws/build/optical_sorting_system/build/lib/optical_sorting_system
+[10.544s] running install
+[10.546s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[10.547s]   warnings.warn(
+[10.548s] running install_lib
+[10.556s] creating /home/ubuntu/ros_ws/install/optical_sorting_system/lib/python3.10/site-packages/optical_sorting_system
+[10.558s] copying /home/ubuntu/ros_ws/build/optical_sorting_system/build/lib/optical_sorting_system/__init__.py -> /home/ubuntu/ros_ws/install/optical_sorting_system/lib/python3.10/site-packages/optical_sorting_system
+[10.563s] byte-compiling /home/ubuntu/ros_ws/install/optical_sorting_system/lib/python3.10/site-packages/optical_sorting_system/__init__.py to __init__.cpython-310.pyc
+[10.565s] running install_data
+[10.571s] creating /home/ubuntu/ros_ws/install/optical_sorting_system/share/ament_index
+[10.572s] creating /home/ubuntu/ros_ws/install/optical_sorting_system/share/ament_index/resource_index
+[10.574s] creating /home/ubuntu/ros_ws/install/optical_sorting_system/share/ament_index/resource_index/packages
+[10.575s] copying resource/optical_sorting_system -> /home/ubuntu/ros_ws/install/optical_sorting_system/share/ament_index/resource_index/packages
+[10.577s] copying package.xml -> /home/ubuntu/ros_ws/install/optical_sorting_system/share/optical_sorting_system
+[10.578s] running install_egg_info
+[10.591s] Copying ../../build/optical_sorting_system/optical_sorting_system.egg-info to /home/ubuntu/ros_ws/install/optical_sorting_system/lib/python3.10/site-packages/optical_sorting_system-0.0.0-py3.10.egg-info
+[10.604s] running install_scripts
+[10.798s] writing list of installed files to '/home/ubuntu/ros_ws/build/optical_sorting_system/install.log'
+[11.061s] Invoked command in '/home/ubuntu/ros_ws/src/optical_sorting_system' returned '0': PYTHONPATH=/home/ubuntu/ros_ws/build/optical_sorting_system/prefix_override:/home/ubuntu/ros_ws/install/optical_sorting_system/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/optical_sorting_system build --build-base /home/ubuntu/ros_ws/build/optical_sorting_system/build install --record /home/ubuntu/ros_ws/build/optical_sorting_system/install.log --single-version-externally-managed
