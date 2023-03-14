@@ -1,3 +1,0 @@
-[console_scripts]
-tester = optical_sorting_system.pc.test_node:main
-
