@@ -1,0 +1,44 @@
+[0.387s] Invoking command in '/home/tj/Programming/ROS2/OSS/oss_ws/src/optical_sorting_system': PYTHONPATH=/home/tj/Programming/ROS2/OSS/oss_ws/build/optical_sorting_system/prefix_override:/home/tj/Programming/ROS2/OSS/oss_ws/install/optical_sorting_system/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/optical_sorting_system build --build-base /home/tj/Programming/ROS2/OSS/oss_ws/build/optical_sorting_system/build install --record /home/tj/Programming/ROS2/OSS/oss_ws/build/optical_sorting_system/install.log --single-version-externally-managed
+[0.536s] running egg_info
+[0.536s] creating ../../build/optical_sorting_system/optical_sorting_system.egg-info
+[0.536s] writing ../../build/optical_sorting_system/optical_sorting_system.egg-info/PKG-INFO
+[0.536s] writing dependency_links to ../../build/optical_sorting_system/optical_sorting_system.egg-info/dependency_links.txt
+[0.537s] writing entry points to ../../build/optical_sorting_system/optical_sorting_system.egg-info/entry_points.txt
+[0.537s] writing requirements to ../../build/optical_sorting_system/optical_sorting_system.egg-info/requires.txt
+[0.537s] writing top-level names to ../../build/optical_sorting_system/optical_sorting_system.egg-info/top_level.txt
+[0.537s] writing manifest file '../../build/optical_sorting_system/optical_sorting_system.egg-info/SOURCES.txt'
+[0.538s] reading manifest file '../../build/optical_sorting_system/optical_sorting_system.egg-info/SOURCES.txt'
+[0.538s] writing manifest file '../../build/optical_sorting_system/optical_sorting_system.egg-info/SOURCES.txt'
+[0.538s] running build
+[0.538s] running build_py
+[0.539s] creating /home/tj/Programming/ROS2/OSS/oss_ws/build/optical_sorting_system/build
+[0.539s] creating /home/tj/Programming/ROS2/OSS/oss_ws/build/optical_sorting_system/build/lib
+[0.539s] creating /home/tj/Programming/ROS2/OSS/oss_ws/build/optical_sorting_system/build/lib/optical_sorting_system
+[0.539s] copying optical_sorting_system/__init__.py -> /home/tj/Programming/ROS2/OSS/oss_ws/build/optical_sorting_system/build/lib/optical_sorting_system
+[0.539s] creating /home/tj/Programming/ROS2/OSS/oss_ws/build/optical_sorting_system/build/lib/optical_sorting_system/pc
+[0.539s] copying optical_sorting_system/pc/__init__.py -> /home/tj/Programming/ROS2/OSS/oss_ws/build/optical_sorting_system/build/lib/optical_sorting_system/pc
+[0.539s] copying optical_sorting_system/pc/test_node.py -> /home/tj/Programming/ROS2/OSS/oss_ws/build/optical_sorting_system/build/lib/optical_sorting_system/pc
+[0.539s] running install
+[0.539s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[0.539s]   warnings.warn(
+[0.539s] running install_lib
+[0.540s] creating /home/tj/Programming/ROS2/OSS/oss_ws/install/optical_sorting_system/lib/python3.10/site-packages/optical_sorting_system
+[0.540s] copying /home/tj/Programming/ROS2/OSS/oss_ws/build/optical_sorting_system/build/lib/optical_sorting_system/__init__.py -> /home/tj/Programming/ROS2/OSS/oss_ws/install/optical_sorting_system/lib/python3.10/site-packages/optical_sorting_system
+[0.540s] creating /home/tj/Programming/ROS2/OSS/oss_ws/install/optical_sorting_system/lib/python3.10/site-packages/optical_sorting_system/pc
+[0.540s] copying /home/tj/Programming/ROS2/OSS/oss_ws/build/optical_sorting_system/build/lib/optical_sorting_system/pc/__init__.py -> /home/tj/Programming/ROS2/OSS/oss_ws/install/optical_sorting_system/lib/python3.10/site-packages/optical_sorting_system/pc
+[0.540s] copying /home/tj/Programming/ROS2/OSS/oss_ws/build/optical_sorting_system/build/lib/optical_sorting_system/pc/test_node.py -> /home/tj/Programming/ROS2/OSS/oss_ws/install/optical_sorting_system/lib/python3.10/site-packages/optical_sorting_system/pc
+[0.540s] byte-compiling /home/tj/Programming/ROS2/OSS/oss_ws/install/optical_sorting_system/lib/python3.10/site-packages/optical_sorting_system/__init__.py to __init__.cpython-310.pyc
+[0.540s] byte-compiling /home/tj/Programming/ROS2/OSS/oss_ws/install/optical_sorting_system/lib/python3.10/site-packages/optical_sorting_system/pc/__init__.py to __init__.cpython-310.pyc
+[0.540s] byte-compiling /home/tj/Programming/ROS2/OSS/oss_ws/install/optical_sorting_system/lib/python3.10/site-packages/optical_sorting_system/pc/test_node.py to test_node.cpython-310.pyc
+[0.541s] running install_data
+[0.541s] creating /home/tj/Programming/ROS2/OSS/oss_ws/install/optical_sorting_system/share/ament_index
+[0.541s] creating /home/tj/Programming/ROS2/OSS/oss_ws/install/optical_sorting_system/share/ament_index/resource_index
+[0.541s] creating /home/tj/Programming/ROS2/OSS/oss_ws/install/optical_sorting_system/share/ament_index/resource_index/packages
+[0.541s] copying resource/optical_sorting_system -> /home/tj/Programming/ROS2/OSS/oss_ws/install/optical_sorting_system/share/ament_index/resource_index/packages
+[0.541s] copying package.xml -> /home/tj/Programming/ROS2/OSS/oss_ws/install/optical_sorting_system/share/optical_sorting_system
+[0.541s] running install_egg_info
+[0.542s] Copying ../../build/optical_sorting_system/optical_sorting_system.egg-info to /home/tj/Programming/ROS2/OSS/oss_ws/install/optical_sorting_system/lib/python3.10/site-packages/optical_sorting_system-0.0.0-py3.10.egg-info
+[0.542s] running install_scripts
+[0.557s] Installing tester script to /home/tj/Programming/ROS2/OSS/oss_ws/install/optical_sorting_system/lib/optical_sorting_system
+[0.558s] writing list of installed files to '/home/tj/Programming/ROS2/OSS/oss_ws/build/optical_sorting_system/install.log'
+[0.573s] Invoked command in '/home/tj/Programming/ROS2/OSS/oss_ws/src/optical_sorting_system' returned '0': PYTHONPATH=/home/tj/Programming/ROS2/OSS/oss_ws/build/optical_sorting_system/prefix_override:/home/tj/Programming/ROS2/OSS/oss_ws/install/optical_sorting_system/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/optical_sorting_system build --build-base /home/tj/Programming/ROS2/OSS/oss_ws/build/optical_sorting_system/build install --record /home/tj/Programming/ROS2/OSS/oss_ws/build/optical_sorting_system/install.log --single-version-externally-managed
