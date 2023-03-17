@@ -21,32 +21,41 @@ class Classifier(Node):
 
     def image_classification(self, msg:Image):
         model = YOLO(f" {os.getcwd()}/src/optical_sorting_system/optical_sorting_system/pc/computer_vision/weights/best.pt")  # load the pretrained model
-        model.conf = 0.9
+        model.conf = 0.8
+
+        pub_msg = String()
 
         try: 
             img = self.bridge.imgmsg_to_cv2(msg, desired_encoding='passthrough')
             results = model(source=img, verbose=False)[0].cpu()
             
             classes = results.names
-            found = []
-            for x in results.boxes.cls:
-                found.append(classes.get(int(x.item())))
-
-            self.get_logger().info(str(found))
+            cls = [x.item() for x in results.boxes.cls]
+            conf = [x.item() for x in results.boxes.conf]
+            max_conf = max(conf) if conf else None
+            
+            if max_conf >= model.conf:
+                # Possible, but highly unlikely chance of equal equal confidence values
+                pub_msg.data = classes.get(cls[conf.index(max_conf)]) 
+            else: pub_msg.data = ''
+             
         except CvBridgeError as e:
             self.get_logger().error(str(e))
         
-        #self.classification_publisher.publish()
+        self.get_logger().info(f"Detected {pub_msg.data}")
+        self.classification_publisher.publish(pub_msg)
 
 def main(args=None):
     rclpy.init(args=args)
 
-    classification_subscriber = Classifier()
-
-    rclpy.spin(classification_subscriber)
+    try:
+        classification_subscriber = Classifier()
+        rclpy.spin(classification_subscriber)
+    except KeyboardInterrupt:
+        pass
 
     classification_subscriber.destroy_node()
-    rclpy.shutdown()
+    #rclpy.shutdown()
 
 
 if __name__ == '__main__':
