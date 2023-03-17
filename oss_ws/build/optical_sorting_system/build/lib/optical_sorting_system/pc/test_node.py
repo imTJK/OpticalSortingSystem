@@ -22,7 +22,7 @@ class Classifier(Node):
     def image_classification(self, msg:Image):
         model = YOLO(f" {os.getcwd()}/src/optical_sorting_system/optical_sorting_system/pc/computer_vision/weights/best.pt")  # load the pretrained model
         model.conf = 0.8
-
+        
         pub_msg = String()
 
         try: 
@@ -32,7 +32,7 @@ class Classifier(Node):
             classes = results.names
             cls = [x.item() for x in results.boxes.cls]
             conf = [x.item() for x in results.boxes.conf]
-            max_conf = max(conf) if conf else None
+            max_conf = max(conf) if conf else 0
             
             if max_conf >= model.conf:
                 # Possible, but highly unlikely chance of equal equal confidence values

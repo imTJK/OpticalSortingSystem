@@ -10,7 +10,7 @@ import cv2
 from cv_bridge import CvBridge, CvBridgeError
 
 #Local   
-from .utilities.stepper import Stepper
+from .stepper import Stepper
 
 import time
 
@@ -20,7 +20,6 @@ class ImagePublisher(Node):
 
         #Setup for circular buffer, initalized with "Empty"-Values
         self.classification_buffer_size = 10
-        self.classification_entry = 0
         self.prev_classifications = [''] * self.classification_buffer_size
 
         #Setup for Stepper-Motors
@@ -54,22 +53,24 @@ class ImagePublisher(Node):
         #Listens for incoming classifications of previously published images and steers the motors accordingly
         # - 
 
-        if all(ele == msg.data for ele in self.prev_classifications):
+        if all(ele == msg.data and ele != '' for ele in self.prev_classifications):
             #Stops sending images while the object is being moved/sorted and starts again as soon as it's done
-            self.get_logger().info("Detected")
+            self.get_logger().info(f"Detected {msg.data}")
             self.publisher_timer.destroy()
             match msg.data:
                 case 'plastic':
                     pass
                 case 'paper':
                     pass
+                case 'cardboard':
+                    pass
                 case 'glass':
                     pass
             self.prev_classifications = [''] * self.classification_buffer_size
             self.publisher_timer = self.create_timer(self.timer_period, self.timer_callback)
 
-        self.prev_classifications[self.classification_entry % self.classification_buffer_size] = msg.data 
-        self.classification_entry = (self.classification_entry + 1) % self.classification_buffer_size
+        self.prev_classifications.pop(0)
+        self.prev_classifications.append(msg.data)
 
 def main(args=None):
     rclpy.init(args=args)
